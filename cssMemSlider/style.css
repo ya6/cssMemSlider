@@ -1,0 +1,51 @@
+body { 
+  background: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.main-header {
+  height: 10vh;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 75vh;
+  background: rgb(43, 43, 43);
+  border-radius: 0.4rem;
+}
+
+.slider-image-container {
+  margin-top: 1.3rem;
+  width: 96%;
+  height: 56vh;
+  background: darkcyan;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+slider-mem-image {
+  width: 100%;
+  height: 56vh;
+  background-image: url();
+
+}
+
+.slider-bottom-container  {
+  margin-top: 2.5rem;
+  width: 96%;
+  height: 9vh;
+  background: lightcoral;
+}
