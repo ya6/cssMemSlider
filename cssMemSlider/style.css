@@ -1,4 +1,4 @@
-body { 
+body {
   background: lightgrey;
   margin: 0;
   padding: 0;
@@ -19,7 +19,8 @@ body {
 
 .slider-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+
   align-items: center;
   width: 70%;
   height: 75vh;
@@ -28,24 +29,44 @@ body {
 }
 
 .slider-image-container {
-  margin-top: 1.3rem;
+  display: flex;
+  margin-bottom: 2rem;
   width: 96%;
   height: 56vh;
   background: darkcyan;
   border-radius: 0.4rem;
   overflow: hidden;
+  animation-fill-mode: backwards;
 }
 
-slider-mem-image {
+.slider-mem-image {
   width: 100%;
   height: 56vh;
-  background-image: url();
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.5s;
+  font-size: 0;
+  flex: 0;
+}
+.mem-1 {
+  background-image: url('./img/mem-1.jpg');
 }
 
-.slider-bottom-container  {
-  margin-top: 2.5rem;
-  width: 96%;
-  height: 9vh;
-  background: lightcoral;
+.mem-2 {
+  background-image: url('./img/mem-2.jpg');
+}
+
+.mem-3 {
+  background-image: url('./img/mem-3.jpg');
+}
+
+#slide-1:checked ~ .slider-image-container .mem-1 {
+  flex: 1;
+}
+#slide-2:checked ~ .slider-image-container .mem-2 {
+  flex: 1;
+}
+#slide-3:checked ~ .slider-image-container .mem-3 {
+  flex: 1;
 }
