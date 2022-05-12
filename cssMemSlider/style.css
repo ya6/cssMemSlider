@@ -75,6 +75,10 @@ body {
   background-image: url('./img/mem-3.jpg');
 }
 
+.mem-4 {
+  background-image: url('./img/mem-4.jpg');
+}
+
 #slide-1:checked ~ .slider-image-container .mem-1 {
   flex: 1;
 }
@@ -97,6 +101,7 @@ body {
   font-size: 0;
   height: 6vh;
 }
+
 
 .phrase-1,
 .phrase-2,
