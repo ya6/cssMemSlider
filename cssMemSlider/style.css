@@ -158,6 +158,20 @@ label:hover > span {
   background: #547a86;
 }
 
+label:active > span {
+  background: red;
+}
+
+#slide-1:checked + label:active > span,
+#slide-2:checked + label:active > span,
+#slide-3:checked + label:active > span,
+#slide-4:checked + label:active > span {
+  background: red;
+}
+
+
+
+
 #slide-1:checked + label:hover > span,
 #slide-2:checked + label:hover > span,
 #slide-3:checked + label:hover > span,
