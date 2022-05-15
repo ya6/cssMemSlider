@@ -10,7 +10,7 @@ p {
 }
 
 body {
-  background: lightgrey;
+  background: rgb(240, 240, 240);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  padding:0 0.8rem;
 }
 
 .slider-container {
@@ -186,6 +187,10 @@ label:hover > span {
 }
 
 @media (max-width: 560px) {
+
+  .main-container {
+    padding: 0 1.5rem;
+  }
   .divider-1 {
     height: 4vh;
   }
