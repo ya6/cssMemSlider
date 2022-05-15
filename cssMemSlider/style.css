@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding:0 0.8rem;
+  padding: 0 0.8rem;
 }
 
 .slider-container {
@@ -143,7 +143,7 @@ label {
 }
 
 label:last-of-type {
-  margin-right: 1.0rem;
+  margin-right: 1rem;
 }
 
 label > span {
@@ -155,21 +155,19 @@ label > span {
 }
 
 label:hover > span {
-  background: #1f373f;
+  background: #547a86;
 }
 
-#slide-1:checked + label > span {
-  background: #00bfff;
+#slide-1:checked + label:hover > span,
+#slide-2:checked + label:hover > span,
+#slide-3:checked + label:hover > span,
+#slide-4:checked + label:hover > span {
+  border-color: #547a86;
 }
 
-#slide-2:checked + label > span {
-  background: #00bfff;
-}
-
-#slide-3:checked + label > span {
-  background: #00bfff;
-}
-
+#slide-1:checked + label > span,
+#slide-2:checked + label > span,
+#slide-3:checked + label > span,
 #slide-4:checked + label > span {
   background: #00bfff;
 }
@@ -178,7 +176,6 @@ label:hover > span {
   width: 100%;
   height: 2vh;
   order: 2;
-
 }
 .divider-2 {
   width: 100%;
@@ -187,7 +184,6 @@ label:hover > span {
 }
 
 @media (max-width: 560px) {
-
   .main-container {
     padding: 0 1.5rem;
   }
@@ -217,5 +213,4 @@ label:hover > span {
   .slider-mem-image {
     height: 70vh;
   }
-
 }
