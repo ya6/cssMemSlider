@@ -169,9 +169,6 @@ label:active > span {
   background: red;
 }
 
-
-
-
 #slide-1:checked + label:hover > span,
 #slide-2:checked + label:hover > span,
 #slide-3:checked + label:hover > span,
@@ -194,7 +191,9 @@ label:active > span {
 .divider-2 {
   width: 100%;
   height: 2vh;
-  display: none;
+  /* background: red; */
+  /* display: none; */
+  order: 4;
 }
 
 @media (max-width: 560px) {
@@ -204,10 +203,10 @@ label:active > span {
   .divider-1 {
     height: 4vh;
   }
-  .divider-2 {
+  /* .divider-2 {
     display: block;
     order: 4;
-  }
+  } */
   label {
     order: 3;
   }
@@ -226,5 +225,12 @@ label:active > span {
   }
   .slider-mem-image {
     height: 70vh;
+  }
+}
+
+@media (max-width: 450px) {
+  #slide-1:checked ~ .slider-phrase-container .phrase-1 {
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
 }
